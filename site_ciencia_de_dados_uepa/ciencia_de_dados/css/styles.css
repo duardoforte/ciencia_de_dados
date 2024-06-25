@@ -1,0 +1,802 @@
+html{
+    height: 500vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#logo-uepa{
+    width: 100px;
+    float: left;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+
+header{
+    width: 100%;
+    padding: 5px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 2000;
+    background-color: rgb(253, 253, 253);
+    border-bottom: 2px solid blue;
+}
+
+#logo-gov{
+    width: 80px;
+    float: let;
+}
+
+.flexheader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+section.topo-do-site .flex{
+     align-items: center;
+     justify-content: center;
+     padding: 0 250px;
+     
+}
+
+.flex{
+    display: flex;
+}
+
+
+section.topo-do-site .flex .txt-topo-site h1{
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 2px;
+        text-transform: uppercase;
+        color: rgb(255, 0, 0);
+        font-weight: 1200px;
+        margin-top: -100px;
+
+}
+
+header.rolagem{
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 0px 4%;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.541);
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+header ul li:hover{
+    border-bottom: 4px solid rgb(13, 0, 255);
+    transform: scale(1.10)
+}
+
+header ul li a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.data-science img{
+    width: 300px;
+    background-color: rgb(228, 227, 233);
+    margin-top: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-curso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 490px;
+}
+
+.sem{
+    margin: auto;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.text-curso h1{
+    font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 15px;
+        color: rgb(255, 0, 0);
+        font-weight: 1200px;
+        background-color: rgb(255, 255, 255);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+}
+
+.text-curso h1 span{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    border-bottom: 20px;
+}
+
+
+.btn-contato button{
+    padding: 10px;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 0;
+    width: 120px;
+    height: 40px;
+    transition: .3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.btn-contato button:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 5px aqua;
+}
+
+section.topo-do-site .flex .txt-topo-site p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+    color: white;
+}
+
+.btn-cardapio{
+    padding: 15px;
+}
+
+.btn-cardapio button{
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0;
+    width: 120px;
+    height: 40px;
+    transition: .3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.btn-cardapio button:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+.topo-do-site{
+    background-image: linear-gradient(rgba(29, 29, 29,0.8), rgba(29, 29, 29, 0.8)),url(../img/img-uepa-an.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+section.topo-do-site .flex .txt-topo-site span{
+    position: relative;
+}
+
+section.topo-do-site .flex .txt-topo-site span::before{
+    content: "NA UEPA!";
+    color: white;
+}
+
+section.ondas-box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.onda{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/onda.png);
+    background-size: 1000px 100px;
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+.txt-topo-site{
+    margin-top: 400px;
+    
+}
+
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+#onda3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+#onda4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
+
+@keyframes ondaAnimada{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 30px;
+    height: 20px;
+}
+
+/* estrutura */
+
+section.sobre #img1-sobre{
+    width: 400px;
+    padding: 15px 4%;
+    border-radius: 90px;
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+section.sobre ul li{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+section.sobre .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+section.sobre .title-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sobre #img2-sobre{
+    width: 400px;
+    padding: 10px 4%;
+    border-radius: 90px;
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+/*avaliação*/
+
+section.avaliacoes .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+section.avaliacoes .title-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.avaliacoes p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px 4%;
+    color: black;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+#semestre-mat{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.10s ease-out;
+}
+
+#semestre{
+    cursor: pointer;
+}
+
+#semestre:hover #semestre-mat{
+    
+    max-height: 500px;
+}
+
+#semestre #semestre-mat p{
+    font-size: 25px;
+    padding: 5px 2%;
+}
+
+
+
+.title-about h1{
+    margin-top: 90px;
+}
+
+#img1-avaliacao{
+    width: 600px;
+    padding: 15px 4%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+/*section avaliacao*/
+
+
+
+
+
+/*corpo-docente
+
+/*trabalho feito pelo eduardo corpo docente */
+
+section.corpo-docente .title-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgarmando{
+    height: 370px;
+}
+
+#imggleisson{
+    height: 370px;
+}
+section.corpo-docente .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+section.corpo-docente .title-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.corpo-docente .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+.centralize{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.botaolattes{
+    padding: 2px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0;
+    width: 120px;
+    height: 45px;
+    transition: .3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.botaolattes button:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+.imagemarm {
+    width: 300px; 
+    height: auto; 
+    border: 5px solid rgb(255, 0, 0); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    text-align: center;
+}
+
+
+section.c.title-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profar{
+    text-align: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.texto-prof {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+padding: 30px 4%;
+align-items: center;
+display: flex;
+justify-content: baseline;
+}
+
+.texto-prof ul li h1{
+    font-size: 30px;
+}
+
+.texto-prof ul li{
+    padding: 5px 4%;
+    text-decoration: none;
+}
+
+.texto-prof ul li p a{
+    text-decoration: none;
+}
+
+.txtcampus {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;
+    text-align: center;
+}
+
+.txtcampus h1 {
+    margin-top: 90px;
+}
+
+
+.cursos-ofertados {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.infocontato {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.infocontato h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+
+.localizacao {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.localizacao h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+
+.cursos-ofertados h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+
+#uepa6{
+    width: 800px;
+    height: 500px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+
+
+
+/*nucleo-docente*/
+
+section.nucleo-docente .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+.text-nucleo p{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.espacamento{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/*colegiado*/
+
+section.colegiado .title-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.colegiado .title-about h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-weight: 1200px;    
+}
+
+
+/* rodapé */
+
+footer{
+    padding: 20px 4%;
+    box-shadow: 0 0 20px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+
+.borda{
+    border-top: 2px solid blue;
+}
+
+footer .line-footer p i{
+    color: #370795;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+footer .line-footer h2{
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    line-height: 40px;
+    font-family: monospace;
+}
+
+.btn-social button{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 21px;
+    background-color: rgb(13, 0, 255);
+    cursor: pointer;
+    transition: .2s;
+    margin: 10px;
+}
+
+#logo-uepa{
+    width: 100px;
+}
+
+/*form*/
+
+:root{
+    --border: 1px solid #fff3f31a;
+}
+
+body, table, input, button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font: 300 16px/140% 'Roboto', sans-serif;
+}
+
+
+fieldset{
+    border: none;
+}
+
+
+
+
+tbody td button:hover{
+    text-decoration: underline;
+}
+
+#inscricao button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    transition: .2s;
+    margin: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300px;
+    transition: .3s;
+}
+
+
+
+.centralize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralize2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inscricao button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(255, 0, 0);
+}
+
+
+
+form{
+    border: var(--border);
+    border-inline: none;
+    padding: 20px 0;
+}
+
+
+.container{
+    margin: 0 auto;
+    
+}
+
+.input-wrapper input{
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    
+}
+
+.input-wrapper2 input{
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    margin-top: 200px;
+}
+
+
+form fieldset button{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+
+
+form fieldset div{
+    display: block;
+}
+.input-wrapper i{
+    color: white;
+}
+
+#email-input{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1230px){
+    .txt-topo-site p{
+        display: none;
+    }
+
+    
+
+    .txt-topo-site h1{
+        display: none;
+    }
+
+    .sem img{
+        display: none;
+    }
+
+    #logo-uepa{
+        display: none;
+    }
+
+    #img1-avaliacao{
+        display: none;
+    }
+
+    .centralize .flex{
+        display: inline;
+    }
+
+    .centralize .espacamento{
+        display: inline;
+    }
+
+
+    #uepa6{
+       width: 400px;
+       height: 200px;
+    }
+}
+
+
+
+
+
